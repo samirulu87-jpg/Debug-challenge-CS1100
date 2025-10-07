@@ -1,18 +1,28 @@
-// make sure these match the HTML element names for the ID then class.
-let input = document.querySelector("#name");
-let display = document.querySelector("#output"); // Changed the class to another ID
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">  <!-- Added a link to the style sheet  -->
+    <title>Debug challenge</title>
+  </head>
+  <body>
+    <h1>Welcome to the debug challenge</h1>
+    <h2 class="rainbow-text"> <!--Finished the rainbow-text by adding text to the end.-->
+      This is a simple page that is meant to be used to debug your JS
+      application.
+    </h2> <!--Fixed the closing tag by adding ">" to the end and adding the 2 to h2.-->
 
-// This code should be working
-input.addEventListener("input", function () {
-  const name = input.value;
-  display.textContent = name;
-});  // Uncommented the code here
-
-// Added the missing function simpleMath but defining what the simple math needs to do. 
-function simpleMath(a, b){
-    return a + b;
-}
-
-
-// you should see 5 in the output of your console
-console.log(simpleMath(2, 3));
+    <div class="display"> <!-- Moved the div class and fixed the class DISPLAY to be lowercase -->
+        <p class="bold"> <!--Added paragraph tags around this class called bold.-->
+        There should be multiple bugs inside your html, css and javascript files.
+        There is also a missing tag for this text.
+        </p>
+    </div>
+    <br/>
+ <input type="text" id="name" placeholder="Enter your name" />
+ <p id="output"></p>
+ <script src="script.js"></script>
+</body>
+</html>
