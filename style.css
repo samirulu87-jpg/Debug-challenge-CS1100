@@ -1,10 +1,9 @@
-/* Some kind of header tag is supposed to be here */
-1 {
+
+h1 { /* Added the missing h in this h1 tag. */
   color: red;
 }
 
-/* You should have input here */
-someinputhere {
+#name { /* added the id name to create the border around the name input.*/
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
@@ -38,8 +37,7 @@ someinputhere {
   }
 }
 
-/* half of this class tag is in the html file already */
-.-text {
+.rainbow-text {/* added rainbow to finish the rainbow-text class */
   animation: rainbow 5s linear infinite;
   -webkit-background-clip: text;
   -webkit-animation: rainbow 5s linear infinite;
